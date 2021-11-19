@@ -24,6 +24,7 @@ function clu(x) {
    if (h==12) {
       ampm="PM";
    }
+ 
    
    if (h<10) {
      h="0" + h;
@@ -35,7 +36,7 @@ function clu(x) {
       s="0" + s;
     }
     if (h>12) {
-       h=h-"13";
+       h=h -"12";
        
        
     }

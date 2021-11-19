@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+	<div class="clock">
+		<span style=" color:orange;" id="hours"> </span>
+	    <span style="color:orange;" > : </span>
+	    <span style="color:orange;" id="minutes"> </span>
+	    <span style=" color:orange;" > : </span>
+	    <span style="color:orange;" id="second"> </span> 
+		
+		<span style=" color:orange;" id="ampm">  </span>    
+	</div>
+	<div class="box">
+		<div class="line">
+			<input type="text" disabled id="result">
+		</div>
+		<div class="line">
+			<button onclick="clu(this.value);" value="7">7</button>
+			<button onclick="clu(this.value);" value="8">8</button>
+			<button onclick="clu(this.value);"value="9">9</button>
+			<button onclick="clu(this.value);" value="+">+</button>
+		</div>
+		<div class="line">
+			<button onclick="clu(this.value);" value="4">4</button>
+			<button onclick="clu(this.value);" value="5">5</button>
+			<button onclick="clu(this.value);"value="6">6</button>
+			<button onclick="clu(this.value);" value="-">-</button>
+		</div>
+		<div class="line">
+			<button onclick="clu(this.value);" value="1">1</button>
+			<button onclick="clu(this.value);" value="2">2</button>
+			<button onclick="clu(this.value);" value="3">3</button>
+			<button onclick="clu(this.value);" value="*">×</button>
+		</div>
+		
+		<div class="line">
+			
+			<button onclick="clen();" value="C">C</button>
+			<button onclick="clu(this.value);" value=".">.</button>
+			<button onclick="clu(this.value);" value="%">%</button>
+			<button onclick="clu(this.value);" value="/">/</button>
+		</div>
+		<div class="line">
+			<button onclick="clu(this.value);" value="(">(</button>
+			<button onclick="clu(this.value);" value=")">)</button>
+			<button onclick="clu(this.value);" value="0">0</button>
+			<button onclick="equal();" value="=">=</button>
+		</div>
+		
+	</div>
+
+	
+
+	<script src="main.js">
+		
+	</script>
+
+</body>
+</html>
